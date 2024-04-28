@@ -49,15 +49,15 @@ function Nav() {
         <DialogContent className="custom-dialog-title">Log Out?</DialogContent>
         <DialogContent className="custom-dialog-content">
         Are you sure you want to log out?
-                </DialogContent>
+        </DialogContent>
         <DialogActions className="custom-dialog-actions">
-          <Button onClick={handleCloseLogoutDialog}>
-            Cancel
-          </Button>
-          <Button onClick={handleLogout} className='rojo'>
-            Log Out
-          </Button>
-        </DialogActions>
+  <Button onClick={handleCloseLogoutDialog} sx={{ backgroundColor: "#ABADAB"}}>
+    Cancel
+  </Button>
+  <Button onClick={handleLogout} sx={{ backgroundColor: "#5EFF33" }}>
+    Log Out
+  </Button>
+</DialogActions>
       </Dialog>
     </nav>
   );
