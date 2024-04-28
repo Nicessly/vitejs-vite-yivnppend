@@ -7,8 +7,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import { Dialog, DialogContent, DialogActions, Button } from '@mui/material';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
-import NightsStayIcon from '@mui/icons-material/NightsStay';
+import Brightness6Icon from '@mui/icons-material/Brightness6';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function Nav() {
   const [openLogoutDialog, setOpenLogoutDialog] = useState(false);
@@ -40,12 +40,12 @@ function Nav() {
       <div className="right-section">
         <Tooltip title="Theme" placement="bottom">
           <button className='i' onClick={toggleDarkMode}>
-            {darkMode ? <Brightness7Icon style={{ color: '#fff' }} /> : <NightsStayIcon style={{ color: '#000' }} />}
+            {darkMode ? <Brightness6Icon style={{ color: '#fca94b' }} /> : <DarkModeIcon style={{ color: '#fca94b' }} />}
           </button>
         </Tooltip>
         <Tooltip title="Logout" placement="bottom">
           <button className='i' onClick={handleOpenLogoutDialog}>
-            <LogoutOutlinedIcon style={{ color: darkMode ? '#fff' : '#000' }} />
+            <LogoutOutlinedIcon style={{ color: darkMode ? '#fca94b' : '#fca94b' }} />
           </button>
         </Tooltip>
       </div>
