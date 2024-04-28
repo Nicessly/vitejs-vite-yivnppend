@@ -7,12 +7,10 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import { Dialog, DialogContent, DialogActions, Button } from '@mui/material';
-import Brightness6Icon from '@mui/icons-material/Brightness6';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function Nav() {
   const [openLogoutDialog, setOpenLogoutDialog] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   const handleOpenLogoutDialog = () => {
     setOpenLogoutDialog(true);
@@ -27,25 +25,21 @@ function Nav() {
     setOpenLogoutDialog(false);
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <nav className={`nav ${darkMode ? 'dark-theme' : 'light-theme'}`}>
+    <nav className="nav">
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
         <span className="logo-text">ZYPHY</span>
       </div>
       <div className="right-section">
         <Tooltip title="Theme" placement="bottom">
-          <button className='i' onClick={toggleDarkMode}>
-            {darkMode ? <Brightness6Icon style={{ color: '#fca94b' }} /> : <DarkModeIcon style={{ color: '#fca94b' }} />}
+          <button className='i'>
+            <DarkModeIcon />
           </button>
         </Tooltip>
         <Tooltip title="Logout" placement="bottom">
           <button className='i' onClick={handleOpenLogoutDialog}>
-            <LogoutOutlinedIcon style={{ color: darkMode ? '#fca94b' : '#fca94b' }} />
+            <LogoutOutlinedIcon />
           </button>
         </Tooltip>
       </div>
@@ -54,16 +48,16 @@ function Nav() {
       <Dialog open={openLogoutDialog} onClose={handleCloseLogoutDialog} classes={{ paper: 'custom-dialog-paper' }}>
         <DialogContent className="custom-dialog-title">Log Out?</DialogContent>
         <DialogContent className="custom-dialog-content">
-          Are you sure you want to log out?
+        Are you sure you want to log out?
         </DialogContent>
         <DialogActions className="custom-dialog-actions">
-          <Button onClick={handleCloseLogoutDialog} sx={{ backgroundColor: "#939393"}}>
-            Cancel
-          </Button>
-          <Button onClick={handleLogout} sx={{ backgroundColor: "#fca94b" }}>
-            Log Out
-          </Button>
-        </DialogActions>
+  <Button onClick={handleCloseLogoutDialog} sx={{ backgroundColor: "#939393"}}>
+    Cancel
+  </Button>
+  <Button onClick={handleLogout} sx={{ backgroundColor: "#fca94b" }}>
+    Log Out
+  </Button>
+</DialogActions>
       </Dialog>
     </nav>
   );
