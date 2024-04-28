@@ -45,17 +45,17 @@ function Nav() {
       </div>
 
       {/* Diálogo para confirmar logout */}
-      <Dialog open={openLogoutDialog} onClose={handleCloseLogoutDialog}>
-
-        <DialogContent>
-          ¿Estás seguro de que quieres cerrar sesión?
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseLogoutDialog} color="primary">
-            No
+      <Dialog open={openLogoutDialog} onClose={handleCloseLogoutDialog} classes={{ paper: 'custom-dialog-paper' }}>
+        <DialogContent className="custom-dialog-title">Log Out?</DialogContent>
+        <DialogContent className="custom-dialog-content">
+        Are you sure you want to log out?
+                </DialogContent>
+        <DialogActions className="custom-dialog-actions">
+          <Button onClick={handleCloseLogoutDialog}>
+            Cancel
           </Button>
-          <Button onClick={handleLogout} color="secondary">
-            Sí
+          <Button onClick={handleLogout} className='rojo'>
+            Log Out
           </Button>
         </DialogActions>
       </Dialog>

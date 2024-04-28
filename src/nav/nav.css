@@ -63,4 +63,31 @@
     color: white;
   }
   
+  .custom-dialog-title{
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+
+  }
+
+  .custom-dialog-content {
+    font-size: 15px; 
+  }
   
+  .custom-dialog-actions {
+    justify-content: center; 
+  }
+  
+  .custom-dialog-actions button {
+    padding: 6px 15px; 
+    margin-bottom: 10px;
+    margin-right: 30px;
+    background-color: #fca94b;
+    color: #ffffff;
+    text-transform: lowercase;
+  }
+  
+  .custom-dialog-actions button:hover{
+    background-color: #ffffff;
+    color: #fca94b;
+  }
