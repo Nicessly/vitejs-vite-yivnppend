@@ -3,11 +3,9 @@ import './nav.css';
 import logo from './logoz.png';
 import perfil from './perfil.png';
 import logo2 from './logoy.png';
-import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import { Dialog, DialogContent, DialogActions, Button } from '@mui/material';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function Nav() {
   const [openLogoutDialog, setOpenLogoutDialog] = useState(false);
@@ -32,15 +30,13 @@ function Nav() {
         <span className="logo-text">ZYPHY</span>
       </div>
       <div className="right-section">
-        <Tooltip title="Theme" placement="bottom">
-          <button className='i'>
-            <DarkModeIcon />
-          </button>
-        </Tooltip>
         <Tooltip title="Logout" placement="bottom">
           <button className='i' onClick={handleOpenLogoutDialog}>
             <LogoutOutlinedIcon />
           </button>
+        </Tooltip>
+        <Tooltip title="Theme" placement="bottom">
+        <img src={perfil} className='profile-picture'/>
         </Tooltip>
       </div>
 

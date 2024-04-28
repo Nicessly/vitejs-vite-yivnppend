@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import Nav from './nav/nav'
+import { useState } from 'react';
+import Nav from './nav/nav';
+import Post from './post/post';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-      <Nav/>
-  )
+    <div>
+      <Nav />
+    </div>
+  );
 }
 
-export default App
+export default App;
