@@ -12,6 +12,7 @@ function Nav() {
         <span className="logo-text">ZYPHY</span>
       </div>
       <div className="right-section">
+      <i class="uil uil-setting"></i>
         <img src={perfil} alt="Foto de Perfil" className="profile-picture" />
       </div>
     </nav>

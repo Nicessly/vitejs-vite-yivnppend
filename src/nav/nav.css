@@ -27,7 +27,8 @@
   }
   
   .logo-text {
-    color: #fc9b4b;
+    margin-left: -18px;
+    color: #fcdc4b;
     font-weight: 800;
     font-size: 20px;
   }
