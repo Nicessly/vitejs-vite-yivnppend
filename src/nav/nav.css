@@ -92,3 +92,18 @@
     background-color: #ffffff;
     color: #fca94b;
   }
+
+/* Estilos para el tema claro */
+.light-theme {
+  background-color: #fff;
+  color: #000; /* Texto negro en el tema claro */
+}
+
+
+/* Estilos para el tema oscuro */
+.dark-theme {
+  background-color: #333;
+  color: #fff; /* Texto blanco en el tema oscuro */
+}
+
+
