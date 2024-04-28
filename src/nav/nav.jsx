@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './nav.css'; 
 import logo from './logoz.png';
 import perfil from './perfil.png';
-import logo2 from './logoy.png';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Tooltip from '@mui/material/Tooltip';
