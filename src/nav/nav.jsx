@@ -35,7 +35,7 @@ function Nav() {
             <LogoutOutlinedIcon />
           </button>
         </Tooltip>
-        <Tooltip title="Theme" placement="bottom">
+        <Tooltip title="Perfile" placement="bottom">
         <img src={perfil} className='profile-picture'/>
         </Tooltip>
       </div>
