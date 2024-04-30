@@ -41,7 +41,8 @@
 
 
 button.bo{
-  background-color: #f88120;
+  background: rgb(244,118,0);
+  background: linear-gradient(90deg, rgba(244,118,0,1) 0%, rgb(255, 174, 0) 100%);
   border: none;
   border-radius: 20px;
   padding: 9px 15px;
@@ -66,5 +67,33 @@ button.bo{
     resize: none;
     color: rgb(255, 255, 255); /* Cambiar el color del texto */
   }
-  
+
+/* share.css */
+
+/* Estilos para el contenedor del input de imagen y el icono */
+.ba-container {
+  background-color: transparent;
+  position: relative; /* Para posicionar el icono sobre el input */
+  display: inline-block; /* Para que el contenedor se ajuste al tamaño del contenido */
+}
+
+.input-image {
+  background-color: transparent;
+  z-index: 2;
+  position: absolute; /* Para superponer el input debajo del icono */
+  opacity: 0; /* Para ocultar el input visualmente */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; /* Para que el cursor cambie al pasar sobre el icono */
+}
+
+.ba {
+  background-color: transparent;
+  position: relative; /* Ajusta la posición del icono */
+  z-index: 1; /* Para que el icono esté sobre el input */
+}
+
+/* Otros estilos que ya tienes */
 

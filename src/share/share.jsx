@@ -15,11 +15,18 @@ function Share() {
           <img src={perfil} alt="Profile" className="per" />
         </div>
         <input type="text" className='in' placeholder='what do you think?'/>
-      <AddPhotoAlternateRoundedIcon className='ba' sx={{ 
-        color: "#fff",
-        backgroundColor: "rgb(24, 23, 23)",
-        cursor: "pointer",
-        margin: "10px" }}/>
+        <div className="ba-container">
+  <input type="file" accept="image/*" className="input-image" />
+  <AddPhotoAlternateRoundedIcon
+    className='ba'
+    sx={{ 
+      color: "#fff",
+      backgroundColor: "tansparete",
+      cursor: "pointer",
+      margin: "10px"
+    }}
+  />
+</div>
 
       <button className='bo'>Post</button>
       </form>

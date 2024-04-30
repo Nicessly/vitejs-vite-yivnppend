@@ -21,7 +21,7 @@ function PostBox() {
       <hr className="line" />
       <div class="add-image">
       <FontAwesomeIcon icon={faImage} />
-    <span>Add-image</span>
+    <span>Add Image</span>
 </div>
 <button class="post-button">Post</button>
     </div>

@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import PostBox from './comp/comp';
 import Nav from './nav/nav';
+import Share from './share/share';
+import PostBox from './comp/comp';
+import Pages from './nav/pages/pages';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +11,7 @@ function App() {
     <div>
       <Pages/>
       <Nav/>
-      <PostBox/>
+      <Share/>
     </div>
   );
 }
