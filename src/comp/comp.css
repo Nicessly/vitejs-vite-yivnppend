@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+.post-container {
+    max-width: 400px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid #000; /* Cambiado el color del borde */
+    border-radius: 10px;
+    position: relative;
+    background-color: #111111; /* Cambiado el color de fondo */
+    color: #fff; /* Cambiado el color del texto */
+  }
+  
+  .profile-picture {
+    margin-right: 20px;
+  }
+  
+  .input-container {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .custom-textfield {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #8d8d8d;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+  
+  .custom-textfield:focus {
+    border-color: #ff7b00;
+    outline: none;
+  }
+  
+  .line {
+    width: calc(115% - 70px);
+    margin: 20px 0 10px;
+    border: none;
+    border-top: 1px solid #8d8d8d; /* Cambiado el color de la línea */
+  }
+  
+  .add-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .add-image span {
+    padding-top: 4px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
+  .post-button {
+    font-weight: bold;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-bottom: 4px;
+    background: rgb(244,118,0);
+    background: linear-gradient(90deg, rgba(244,118,0,1) 0%, rgba(255,226,0,1) 100%);
+    color: #000; 
+  }
+  

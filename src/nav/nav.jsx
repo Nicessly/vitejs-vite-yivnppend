@@ -41,12 +41,12 @@ function Nav() {
       </div>
 
       {/* Diálogo para confirmar logout */}
-      <Dialog open={openLogoutDialog} onClose={handleCloseLogoutDialog} classes={{ paper: 'custom-dialog-paper' }}>
-        <DialogContent className="custom-dialog-title">Log Out?</DialogContent>
-        <DialogContent className="custom-dialog-content">
+      <Dialog open={openLogoutDialog} onClose={handleCloseLogoutDialog} classes={{ paper: 'custom-dialog-paper' }} sx={{ backgroundColor: "#fff" }}>
+        <DialogContent className="custom-dialog-title"sx={{ backgroundColor: "#fff" }}>Log Out?</DialogContent>
+        <DialogContent className="custom-dialog-content"sx={{ backgroundColor: "#fff" }}>
         Are you sure you want to log out?
         </DialogContent>
-        <DialogActions className="custom-dialog-actions">
+        <DialogActions className="custom-dialog-actions"sx={{ backgroundColor: "#fff" }}>
   <Button onClick={handleCloseLogoutDialog} sx={{ backgroundColor: "#939393"}}>
     Cancel
   </Button>

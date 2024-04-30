@@ -12,18 +12,18 @@
     padding: 15px 20px;
     position: static;
     height: 40px;
-    background-color: #000;
+    background-color: rgb(24, 23, 23);
     color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
   }
   
   .logo-container {
+    background-color: rgb(24, 23, 23);
     display: flex;
     align-items: center;
   }
   
   .logo {
+    background-color: rgb(24, 23, 23);
     width: 50px;
     height: auto;
     margin-left: -5px;
@@ -31,6 +31,7 @@
   }
   
   .logo-text {
+    background-color: rgb(24, 23, 23);
     margin-left: -10px;
     color: #fca94b;
     font-weight: 700;
@@ -39,6 +40,7 @@
   }
   
   .right-section {
+    background-color: rgb(24, 23, 23);
     display: flex;
     align-items: center;
   }
@@ -60,6 +62,7 @@
   }
   
   .right-section button .MuiSvgIcon-root {
+    background-color: rgb(24, 23, 23);
     color: white;
     font-size: large;
   }

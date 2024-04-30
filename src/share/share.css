@@ -10,21 +10,23 @@
   position: static;
   max-width: 433px;
   margin: 5px auto;
-  border: 1px solid #5a5a5a;
+  border: none;
   border-radius: 10px;
-  background-color: #000000;
+  background-color: #ffffff;
   display: flex; /* Añadido */
   align-items: center; /* Añadido */
+  background-color: rgb(24, 23, 23);
 }
 
-.profile-pic {
+.profile-pic{
  cursor: pointer;
-  margin-right: 20px; /* Añadido */
+  margin-right: 20px;
+  background-color: rgb(24, 23, 23);
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.per {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -37,11 +39,32 @@
   font-size: 16px;
 }
 
-.ba:hover {
-  color: #ff7d12;
+
+button.bo{
+  background-color: #f88120;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
 }
 
-button.bo:hover {
-  background-color: #ff7d12;
-}
+
+.in {
+  background-color: rgb(24, 23, 23);
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    resize: none;
+    color: rgb(255, 255, 255); /* Cambiar el color del texto */
+  }
+  
 

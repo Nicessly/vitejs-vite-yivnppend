@@ -12,27 +12,16 @@ function Share() {
     <div>
       <form className="create-post">
         <div className="profile-pic">
-          <img src={perfil} alt="Profile" className="logo" />
+          <img src={perfil} alt="Profile" className="per" />
         </div>
-        <TextField
-        placeholder="What's on your mind?"
-        variant="standard"
-        color="warning"
-        focused
-        sx={{ flex: 1, mr: 1 }}
-      />
+        <input type="text" className='in' placeholder='what do you think?'/>
       <AddPhotoAlternateRoundedIcon className='ba' sx={{ 
-        color: "#fca94b",
+        color: "#fff",
+        backgroundColor: "rgb(24, 23, 23)",
         cursor: "pointer",
         margin: "10px" }}/>
 
-      <Button variant="contained" disableElevation className='bo'
-      sx={{ 
-        backgroundColor: "#fca94b",
-        textTransform: "capitalize",
-        borderRadius: '25px' }}>
-      Post
-    </Button>
+      <button className='bo'>Post</button>
       </form>
     </div>
   );

@@ -1,14 +1,15 @@
 import { useState } from 'react';
+import PostBox from './comp/comp';
 import Nav from './nav/nav';
-import Share from './share/share';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <Nav />
-      <Share />
+      <Pages/>
+      <Nav/>
+      <PostBox/>
     </div>
   );
 }
